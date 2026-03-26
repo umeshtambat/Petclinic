@@ -102,6 +102,27 @@
     </dependencyManagement>
 
     <dependencies>
+	    
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter</artifactId>
+  <version>2.7.18</version>
+</dependency>
+
+
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+  <version>2.7.18</version>
+</dependency>
+
+
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
+  <version>2.7.18</version>
+</dependency>
+
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-servlet-api</artifactId>
@@ -315,6 +336,7 @@
 <plugin>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-maven-plugin</artifactId>
+  <version>2.7.18</version>
   <configuration>
     <mainClass>org.springframework.samples.petclinic.PetClinicApplication</mainClass>
   </configuration>
@@ -326,6 +348,7 @@
     </execution>
   </executions>
 </plugin>
+
 
 
 
