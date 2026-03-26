@@ -23,7 +23,7 @@
         <!-- Spring -->
         <!-- For framework compatibility, refer to the Spring Boot Dependencies BOM -->
         <!-- https://github.com/spring-projects/spring-boot/blob/master/spring-boot-project/spring-boot-dependencies/build.gradle -->
-        <spring-framework.version>5.3.18</spring-framework.version>
+        
 
         <!-- Web dependencies -->
         <!-- Version update should also be done in wro.xml, petclinic.less and static resources: htmlHeader.tag and footer.tag-->
@@ -99,7 +99,8 @@
                 <type>pom</type>
             </dependency>
         </dependencies>
-    </dependencyManagement>
+
+   </dependencyManagement>
 
     <dependencies>
 	    
@@ -162,16 +163,7 @@
             <artifactId>spring-data-jpa</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>${spring-framework.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring-framework.version}</version>
-        </dependency>
+ 
         <!-- used for EhCacheCacheManager -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -311,6 +303,8 @@
         </dependency>
 
     </dependencies>
+	
+	 
 
     <!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
     <build>
