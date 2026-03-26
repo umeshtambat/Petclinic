@@ -3,7 +3,7 @@ version: "3.8"
 services:
  petclinic:
    image: umeshtambat/petclinic-image:latest
-   container-name: petclinic
+   container_name: petclinic
    ports:
     - "8082:8082"
    restart: always
