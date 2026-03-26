@@ -25,7 +25,7 @@ import org.springframework.samples.petclinic.repository.PetRepository;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
-import org.springframework.stereotype.Repository;
+
 
 
 /**
@@ -35,7 +35,7 @@ import org.springframework.stereotype.Repository;
  * @since 15.1.2013
  */
 @Primary
-@Repository
+
 public interface SpringDataPetRepository extends PetRepository, Repository<Pet, Integer> {
 
     @Override
