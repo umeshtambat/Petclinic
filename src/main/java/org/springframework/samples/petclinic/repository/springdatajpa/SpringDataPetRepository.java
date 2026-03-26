@@ -22,6 +22,11 @@ import org.springframework.data.repository.Repository;
 import org.springframework.samples.petclinic.model.Pet;
 import org.springframework.samples.petclinic.model.PetType;
 import org.springframework.samples.petclinic.repository.PetRepository;
+import org.springframework.context.annotation.Primary;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.Repository;
+import org.springframework.stereotype.Repository;
+
 
 /**
  * Spring Data JPA specialization of the {@link PetRepository} interface
@@ -30,6 +35,7 @@ import org.springframework.samples.petclinic.repository.PetRepository;
  * @since 15.1.2013
  */
 @Primary
+@Repository
 public interface SpringDataPetRepository extends PetRepository, Repository<Pet, Integer> {
 
     @Override
