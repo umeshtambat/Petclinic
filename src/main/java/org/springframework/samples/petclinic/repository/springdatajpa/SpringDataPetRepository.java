@@ -35,7 +35,6 @@ import org.springframework.data.repository.Repository;
  * @since 15.1.2013
  */
 @Primary
-
 public interface SpringDataPetRepository extends PetRepository, Repository<Pet, Integer> {
 
     @Override
